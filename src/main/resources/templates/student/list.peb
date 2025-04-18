@@ -1,0 +1,19 @@
+    {% extends "layout.peb" %}
+
+        {% block content %}
+    <h1>Liste des étudiants</h1>
+
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Nombre de cours</th>
+        </tr>
+
+        {% for student in studentList %}
+            <tr>
+                <td>{{ student.name }}</td>
+                <td>{{ student.courses | length }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

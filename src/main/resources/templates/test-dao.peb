@@ -1,0 +1,6 @@
+{% extends "layout.peb" %}
+
+{% block content %}
+    <h1>Test du DAO</h1>
+{% endblock %}
+

@@ -1,0 +1,14 @@
+{% extends "layout.peb" %}
+
+{% block content %}
+    <h1>Info sur un étudiant</h1>
+
+    <h2>{{ student.name }}</h2>
+
+    <ul>
+        {% for course in student.courses %}
+            <li>{{ course.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
