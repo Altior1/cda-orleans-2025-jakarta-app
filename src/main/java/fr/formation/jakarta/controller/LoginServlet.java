@@ -1,6 +1,6 @@
 package fr.formation.jakarta.controller;
 
-import fr.formation.jakarta.model.entity.User;
+import fr.formation.jakarta.model.entity.UserWithoutJPA;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
         String name = req.getParameter("name");
         String email = req.getParameter("email");
 
-        User user = new User(name, email);
+        UserWithoutJPA user = new UserWithoutJPA(name, email);
 
         HttpSession session = req.getSession();
         session.setAttribute("user", user);

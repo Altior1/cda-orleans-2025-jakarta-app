@@ -1,0 +1,9 @@
+{% extends "user/layout.peb" %}
+
+{% block content %}
+    <h1>Création d'un utilisateur</h1>
+
+    {{ user }}
+
+{% endblock %}
+

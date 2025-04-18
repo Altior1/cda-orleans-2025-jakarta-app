@@ -1,4 +1,4 @@
-<%@ page import="fr.formation.jakarta.model.entity.User" %><%--
+<%@ page import="fr.formation.jakarta.model.entity.UserWithoutJPA" %><%--
   Created by IntelliJ IDEA.
   User: Administrateur
   Date: 15/04/2025
@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-User user = (User) session.getAttribute("user");
+UserWithoutJPA user = (UserWithoutJPA) session.getAttribute("user");
 %>
 <html>
 <head>

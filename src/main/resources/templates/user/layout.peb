@@ -1,0 +1,8 @@
+{% extends "layout.peb" %}
+
+{% block nav %}
+
+    <a href="/user/persist">Création</a>
+    <a href="/user/list">Liste des utilisateurs</a>
+
+{% endblock %}

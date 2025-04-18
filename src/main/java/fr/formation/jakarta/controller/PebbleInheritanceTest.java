@@ -1,6 +1,6 @@
 package fr.formation.jakarta.controller;
 
-import fr.formation.jakarta.model.entity.User;
+import fr.formation.jakarta.model.entity.UserWithoutJPA;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -18,10 +18,10 @@ public class PebbleInheritanceTest extends AbstractServlet{
             HttpServletResponse resp
     ) throws ServletException, IOException {
 
-        User user = new User("Joe", "joe@user.com");
-        List<User> users = new ArrayList<>();
-        users.add(new User("Jane", "jane@user.com"));
-        users.add(new User("Jack", "jack@user.com"));
+        UserWithoutJPA user = new UserWithoutJPA("Joe", "joe@user.com");
+        List<UserWithoutJPA> users = new ArrayList<>();
+        users.add(new UserWithoutJPA("Jane", "jane@user.com"));
+        users.add(new UserWithoutJPA("Jack", "jack@user.com"));
 
         this.context.put("name", "Severn");
         this.context.put("userList", users);

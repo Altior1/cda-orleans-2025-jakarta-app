@@ -1,0 +1,14 @@
+{% extends "user/layout.peb" %}
+
+{% block content %}
+    <h1>Affichage d'un utilisateur</h1>
+
+    {% if user is not null %}
+        {{ user }}
+    {%  else %}
+        Aucun utilisateur trouvé
+    {% endif %}
+
+
+{% endblock %}
+
