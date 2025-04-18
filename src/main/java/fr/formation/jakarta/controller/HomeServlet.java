@@ -24,7 +24,7 @@ public class HomeServlet extends HttpServlet {
 
         // Récupération d'un dispatcher pour la page cible
         RequestDispatcher dispatcher = req.getRequestDispatcher(
-                "index.jsp"
+                "index.js"
         );
 
         // Transmission de la requête à la page JSP

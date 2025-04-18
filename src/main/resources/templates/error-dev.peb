@@ -1,0 +1,10 @@
+{% extends "layout.peb" %}
+
+    {% block title %} Erreur {% endblock %}
+
+    {% block content %}
+        <h1>Erreur interne</h1>
+        <p><strong>Exception :</strong> {{ exception }}</p>
+        <p><strong>Message :</strong> {{ message }}</p>
+        <pre>{{ stacktrace }}</pre>
+    {% endblock %}

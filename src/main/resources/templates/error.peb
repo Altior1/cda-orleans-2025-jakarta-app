@@ -1,0 +1,8 @@
+{% extends "layout.peb" %}
+
+{% block title %} Erreur {% endblock %}
+
+{% block content %}
+<h1>Une erreur est survenue</h1>
+<p>Veuillez réessayer plus tard.</p>
+{% endblock %}
